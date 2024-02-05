@@ -30,6 +30,7 @@ alias v="nvim ."
 alias nv="nvim"
 alias obsidian="cd ${HOME}/Library/Mobile\ Documents/iCloud\~md\~obsidian/Documents"
 alias chad="imgcat ~/giga.jpg"
+alias docx2pdf="/Applications/LibreOffice.app/Contents/MacOS/soffice --headless --convert-to pdf"
 
 # Own functions
 mcd ()
@@ -58,10 +59,6 @@ cppcr() {
 
 function duls {
     paste <( du -hs -- "$@" | cut -f1 ) <( ls -ldf -- "$@" )
-}
-
-word2pdf() {
-    soffice --headless --convert-to pdf "$1"
 }
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
